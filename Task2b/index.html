@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="background-text">
+            <h1>Create New Account</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-steps">
+            <div class="step">1 Your Profile</div>
+            <div class="step active">2 Business Information</div>
+            <div class="step">3 Additional Users</div>
+        </div>
+        <div class="form-step">
+            <h3>Step 2: Business Information</h3>
+            <p>Please, enter information about your company.</p>
+            <form id="registration-form">
+                <div class="form-group-container">
+                    <div class="form-group-half">
+                        <div class="form-group">
+                            <label for="brand-name">Brand Name*</label>
+                            <input type="text" id="brand-name" name="brand-name" placeholder="Input Your Brand Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="street-address">Street Address*</label>
+                            <input type="text" id="street-address" name="street-address" placeholder="Input Your Street Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip-code">Zip Code*</label>
+                            <input type="text" id="zip-code" name="zip-code" placeholder="Input Zip Code" required>
+                        </div>
+                    </div>
+                    <div class="form-group-half">
+                        <div class="form-group">
+                            <label for="brand-type">Brand Type*</label>
+                            <div class="select-wrapper">
+                                <select id="brand-type" name="brand-type" required>
+                                    <option value="">Select Type of Your Brand</option>
+                                    <option value="local">Local</option>
+                                    <option value="national">National</option>
+                                </select>
+                                <span class="arrow">&#9662;</span>
+                                <div class="tooltip">
+                                    <p>Local: Brands with distribution in 3 divisions or less OR multiple divisions but a total of 150 stores or less.</p>
+                                    <p>National: Brands with distribution in 4 or more divisions or in more than 150 stores.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City*</label>
+                            <input type="text" id="city" name="city" placeholder="Input City" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tax-id">Tax ID Number*</label>
+                            <input type="text" id="tax-id" name="tax-id" placeholder="Input Tax ID Number" required>
+                        </div>
+                    </div>
+                </div>
+                <h4>DOCUMENTS</h4>
+                <p>Once the following documents are signed, you'll be ready to get started</p>
+                <div class="form-group documents">
+                    <input type="text" value="Electronically sign the agreement(s)" readonly>
+                    <button class="document-button">&#10003;</button>
+                </div>
+                <div class="form-group documents">
+                    <input type="text" value="Non adult beverage Kroger market supplier waiver and release" readonly>
+                    <button class="document-button red">&#10007;</button>
+                </div>
+                <h4>COI PDF UPLOAD</h4>
+                <p>Once the following documents are signed, you'll be ready to get started</p>
+                <div class="form-group documents">
+                    <input type="text" value="Electronically sign the agreement(s)" readonly>
+                    <button class="document-button">&#10003;</button>
+                </div>
+                <div class="form-footer">
+                    <a href="#">Previous Step</a>
+                    <button type="submit">Next Step</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a href="#" class="back-to-login">Back to Login</a>
+    <script src="script.js"></script>
+</body>
+</html>
